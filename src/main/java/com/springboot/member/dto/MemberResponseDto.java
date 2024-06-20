@@ -1,7 +1,9 @@
 package com.springboot.member.dto;
 
+import com.springboot.member.entity.Member;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 // TODO 변경: Builder 패턴 적용
 @Builder
@@ -11,4 +13,6 @@ public class MemberResponseDto {
     private String email;
     private String name;
     private String phone;
+    @Setter
+    private Member.MemberStatus memberStatus;
 }
